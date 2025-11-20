@@ -1,0 +1,672 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}  /* foundation set up */
+
+
+
+@keyframes slide-left {                 /* blue print for animation function */
+	from{ transform: translateX(30%); }   
+ 	 to { transform: translateX(3%); }
+}
+
+
+/* ↓ Common area(Upper part) ↓ */
+#header{
+	background-image: url("../image/banner.jpg");
+	background-attachment:scroll; 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width:100%;
+	height:200px;
+	overflow-x: hidden;
+}
+
+	a{
+		font-size: 25px;
+		text-decoration: none; /* removing underbar */
+		color: black; /*font color*/
+	}
+
+		#logo{
+			margin-top: 40px;
+			width: 200px;
+		}
+
+	.slide-left{
+		display: flex; /* With this code, user can style inline element */
+  		white-space: nowrap; /*To prevent line breaks*/
+		transform: translateX(30%); 
+		/* ↑ If it isn't existed, the sentence might flicking after loarding the page ↑*/
+		animation: slide-left 1s linear forwards;
+		/*calling animation(named as 'slide-left') / duration 	/ timing function / keeping the state after finishing movement*/
+	}	
+
+#navbarNavDarkDropdown {
+    display: flex;
+    justify-content: center; /* it arranges all child elements into center*/
+}
+	.navbar-nav{
+		gap: 5.5rem;
+	}
+
+
+/* ↓ Common area(Footer) ↓ */
+#footer{
+	display:block;
+	background-color:gray;
+	width:100%;
+	height: auto;
+}
+
+	#bottombanner{
+		display: flex;
+		width: 100%;
+		gap: 10rem;
+		justify-content: center;
+	}
+		.bottomuper{
+			display: flex;
+			gap:5rem;
+		}
+
+		.bottomlower{
+			display: flex;
+			gap:15rem;
+		}
+
+
+
+	.helpdesk{
+		transform:translate(15%, 0%);
+		width: auto;
+		margin-right: 5%;
+	}
+
+	.bottombutton{
+		display: flex;
+		font-size: inherit; /*To keep applying parent text style after <a> apply to text*/
+		font-weight: inherit; /*To keep applying parent text style after <a> apply to text*/
+	}
+
+	.bottombutton:hover{
+		transform: translateY(-5px);
+		text-shadow: 0 5px 15px rgba(145, 197, 60, 0.923);
+	}
+
+
+
+	#copyright{
+		text-align: center;			
+	}
+
+
+/* ↓ Individual area(homepage) ↓ */
+.container{
+	display: flex;
+	align-items: center;
+	background-color:rgb(238, 230, 229);
+	max-width: 100% !important; /* 'div' element has limited width. Using '!important' makes 'div' reach to the end of both side */
+	height:100%;	
+}
+
+body.others .sectioncenter{ /* This set-up is applied except indext.html */
+	gap: 3rem;
+}
+
+.sectioncenter{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 60%;
+	}
+
+	.companyintro{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: rgb(240, 245, 244);
+		align-items: center;
+		padding: 1%;
+		padding-top: 0;
+		justify-content: center;
+	}
+
+		
+	.selectionHeader{
+		display: flex; /* Initiating command for handling contents inside*/
+		width: 100%;
+		white-space: nowrap;
+		margin-top: 5%
+	}
+
+	.companyintro .selectionHeader{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100px;
+		margin-top: 0;
+		/* border: 1px solid red;   For checking the area*/
+	}
+
+		.companyintro .selectionHeader h2{
+			display: flex;
+			margin: 0;
+			line-height: normal;
+		}
+		
+	.domesticimage{
+		display: flex;
+		align-items: center;
+	}
+
+		.domesticimage img{
+			margin: 1%;
+		}
+
+		.domesticimage blockquote{
+			margin: 1%;
+		}
+
+		.domesticimage a:hover{
+			transform: translateY(-5px);
+			text-shadow: 0 5px 15px rgba(145, 197, 60, 0.923);
+		}
+
+			#asia blockquote{
+				width: 100%;
+			}
+			
+		.companyintro blockquote{
+			font-size: 20px;
+		}		
+
+			.companytable tr td{
+				border: 1px solid black;
+				border-collapse: collapse;
+				text-align: center;
+				padding: 2%;
+				font-size: 30px;
+			}
+
+				.celltitle{
+					width: 250px;
+					background-color: gray;
+				}
+
+				.cellcontent{
+					width: 400px;
+				}
+
+
+			.contactform{
+				border: 1px solid black;
+				width: 100%;
+				padding: 1%;
+			}
+
+				.row.g-3.needs-validation{
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+				}
+					.col-md-3{
+						width: 90%;
+					}
+
+					.col-md-4{
+						width: 90%;
+					}
+
+					.col-md-6{
+						width: 90%;
+					}
+			
+
+			.refound blockquote{
+				font-size: 20px;
+				text-align: left;
+			}		
+
+.sectionsideleft{ /* Advertisement area  */
+	width: 20%;
+	height:100%;
+	justify-items: center;
+	align-items: center; /* To locate image at center(vertical) */
+	align-content: center;	
+}
+
+	#carouselExampleAutoplaying{ /* carousel funtion */
+		height: 100%;
+		width:90%;
+		align-items: center;
+		align-content: center;		
+	}
+	
+		.carousel-inner{
+			display: flex;
+			height: 100%;
+			align-items: center;
+			align-content: center;
+		}
+
+			.carousel-item.active{
+				display: flex;
+				height: 100%;
+				align-content: center;
+			}
+
+			img.d-block.w-100{
+				display: block;
+				width: 100%;
+				height: 100%; 
+				object-fit: fill;				
+			}		
+		
+		
+	.sidebutton{  /* Except from [body.index] */			
+		display:flex;
+		width:60%;
+		flex-direction: column;
+		gap: 3rem;
+		font-size:20px;
+		font-weight: bold;
+		background-color: azure;
+		padding:5%;
+		margin-top: 21%;
+		border-radius: 10%;			
+	}
+
+.sectionsideright{ /* Advertisement area  */
+	width: 20%;
+	justify-items: center;
+}
+
+#Irelandlink{
+	display:flex;
+	width:100%;
+	height:300px;
+}
+
+
+.Dublinimage{
+	align-items: center;
+	align-content:center;
+	background-image: url("../image/Dublin.webp");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	box-shadow: 0 5px 15px rgba(106, 191, 231, 0.923);
+	border-radius: 1cap;	
+}
+
+.Dublinimage:hover{ /* Effect when cursor on an object */
+	transform: translateY(-5px);
+ 	box-shadow: 0 5px 15px rgba(145, 197, 60, 0.923);
+}
+
+	#Irelandname{
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size:clamp(3rem, 3vw, 6rem);
+		margin: 0;
+	}
+
+.anchor{  /* Link to other html*/
+	display: block;
+	width: 100%;
+	height: 200px;		
+}
+
+.anchor:hover{
+	transform: translateY(-5px);
+ 	box-shadow: 0 5px 15px rgba(145, 197, 60, 0.923);
+ 	
+}
+
+.sectioncenter2{ /*Four continents*/
+	display: flex;
+	min-width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}	
+
+	.city1{ /*Asia, Europe*/
+		display: flex;
+		gap: 20px;
+		margin-bottom: 10%;
+		justify-content: space-between;
+		width: 100%;
+	}
+		.Cities{ /* Each content slot*/
+			width:100%;
+			height: 200px;		
+		}
+			#Europe{
+				align-items: center;
+				align-content:center;
+				background-image: url("../image/europeLandmark.png");
+				background-repeat:no-repeat;
+				background-size: 100% 100%;
+				background-position: center;
+				inset: 0;
+				box-shadow: 0 5px 15px rgba(106, 191, 231, 0.923);
+				width: auto;
+				height:100%;
+				overflow:hidden;
+				border-radius: 1cap;
+			}
+
+			#Asia{
+				align-items: center;
+				align-content:center;
+				background-image: url("../image/asiaLandmark.png");
+				background-repeat:no-repeat;
+				background-size: 100% 100%;
+				background-position: center;
+				inset: 0;
+				box-shadow: 0 5px 15px rgba(106, 191, 231, 0.923);
+				width: auto;
+				height:100%;
+				overflow:hidden;
+				border-radius: 1cap;
+			}
+
+	.city2{ /* America, Africa*/
+		display: flex;
+		gap: 20px;
+		margin-bottom: 10%;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+			#America{
+				align-items: center;
+				align-content:center;
+				background-image: url("../image/americaLandmark.png");
+				background-repeat:no-repeat;
+				background-size: 100% 100%;
+				background-position: center;
+				inset: 0;
+				box-shadow: 0 5px 15px rgba(106, 191, 231, 0.923);
+				width: auto;
+				height:100%;
+				overflow:hidden;
+				border-radius: 1cap;
+			}
+
+			#Africa{
+				align-items: center;
+				align-content:center;
+				background-image: url("../image/AfricaLandmark.png");
+				background-repeat:no-repeat;
+				background-size: 100% 100%;
+				background-position: center;
+				inset: 0;
+				box-shadow: 0 5px 15px rgba(106, 191, 231, 0.923);
+				width: auto;
+				height:100%;
+				overflow:hidden;
+				border-radius: 1cap;
+			}		
+
+		.Cityname{
+			color:rgb(0,0,0);
+			font-weight: bold;
+			font-size:clamp(2rem, 3vw, 6rem);
+			text-align: center;
+			justify-content: center;
+		}
+
+
+@media only screen and (max-width: 1200px) {
+	body{
+	width: 1200px;
+	}
+
+		body.others.sectionsideleft{
+			width: 100%;
+			justify-content: center;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.sidebutton{/*Applied hover function*/
+			display:flex;
+			width:60%;
+			flex-direction: column;
+			gap: 1rem;
+			font-size:20px;
+			font-weight: bold;
+			background-color: azure;
+			padding:5%;
+			margin-top: 21%;
+			border-radius: 10%;			
+		}
+
+		.companyintro blockquote{
+				font-size: 20px;
+		}
+
+			.companytable tr td{
+				border: 1px solid black;
+				border-collapse: collapse;
+				text-align: center;
+				padding: 2%;
+				font-size: 15px;
+			}
+			
+	.bottombanner{
+		display: flex;
+		justify-content: center;		
+	}
+
+		.bottomuper{
+			grid-area: 1rem;
+		}
+
+		.bottomlower{
+			gap: 1rem;
+		}			
+}
+
+@media only screen and (max-width: 992px) {
+	body{
+		width: 992px;
+	}
+
+		.navbar-nav{
+			display: flex;
+			flex-direction: row;
+			gap:1px;
+		}
+
+		.container{
+			display: flex;
+			flex-direction:column;
+			align-items: center;			
+		}
+
+		.city1{
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.city2{
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+			.Cities{
+				min-width: 100%;
+				height: 200px;
+			}
+
+		.domesticimage{
+			display: flex;
+			flex-direction: column;
+		}
+
+		/*↓ Only for mainpage(body.index) ↓*/
+		body.index .sectionsideleft{
+			display: none; /* It will disappear only when the main page becomes small */
+		}
+		/*↑ Only for mainpage(body.index) ↑*/
+
+		body.others .sectionsideleft{ /* For other html files */
+			width: 100%;
+			justify-content: center;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+			.sidebutton{
+				display:flex;
+				flex-direction: row;
+				width: 100%;
+				text-align: center;
+				margin-top: 0;
+				margin-left: 0;
+				margin-right: 0%;
+				border-radius: 0;
+				padding:1%;
+				background-size: contain;				
+			}
+			
+				.sidebutton a{
+					line-height: 1;
+				}				
+		
+	.sectionsideright{
+		display:none;
+	}		
+
+	#bottombanner{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;		
+	}
+
+		.bottomupper{
+			display: flex;
+			justify-content: center;
+			gap: 5rem;
+		}
+
+		.bottomlower{
+			display: flex;
+			justify-content: center;
+			gap: 10rem;
+		}
+}
+
+@media only screen and (max-width: 768px) {
+	body{
+		width: 768px;
+	}
+
+		.navbar-nav{
+			display: flex;
+			flex-direction: column;
+			gap:1px;
+		}
+
+		.container{
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+			
+		}
+
+			.city1{
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.city2{
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+				.Cities{
+					min-width: 100%;
+					height: 200px;
+				}
+
+		/*↓ Only for mainpage(body.index) ↓*/
+		body.index .sectionsideleft{
+			display: none; /* It will disappear only when the main page becomes small */
+		}
+		/*↑ Only for mainpage(body.index) ↑*/
+
+		body.others .sectionsideleft{
+			width: 100%;
+			justify-content: center;
+			padding: 0;
+			box-sizing: border-box;
+		}
+			.sidebutton{
+				display:flex;
+				flex-direction: row;
+				width: 100%;
+				text-align: center;
+				margin-top: 0;
+				margin-left: 0;
+				margin-right: 0%;
+				border-radius: 0;
+				padding:1%;
+				background-size: contain;				
+			}			
+				.sidebutton a{
+					line-height: 1;
+				}
+
+		.companyintro blockquote{
+			font-size: 10px;
+		}
+
+			.companytable tr td{
+				border: 1px solid black;
+				border-collapse: collapse;
+				text-align: center;
+				padding: 2%;
+				font-size: 10px;
+			}
+
+			.domesticimage{
+				display: flex;
+				flex-direction: column;
+			}				
+		
+		.sectionsideright{
+			display:none;
+		}		
+
+	#bottombanner{
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;					
+	}
+
+		.bottomupper{
+			display: felx;
+		}
+
+		.bottomlower{
+			display: flex;
+			justify-content: center;
+			gap: 10rem;
+		}		
+}
+
+	

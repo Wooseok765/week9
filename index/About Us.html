@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../CSS/css/bootstrap.min.css">
+		<script src="../JS/js/bootstrap.bundle.min.js" defer></script>
+		<link rel="stylesheet" href="../CSS/Homepage.css">
+		<title> Help Desk </title>
+	</head>
+		
+	<body class="others">
+	<!-- Common area(upper part) -->
+		<header >
+			<div id="header">
+				<a href="index.html">
+					<img id="logo" src="../image/bird.png" alt="logo"><!--To move home-->
+				</a>				
+				<h1 class="slide-left"> Perfect holiday with <i>Trvel Explorer</i></h1>
+			</div>
+		</header>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- drop-down manu -->    
+			<div class="container-fluid">    			
+    			<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      				<ul class="navbar-nav">     				
+						<li class="nav-item dropdown">
+							<button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            					Domestic Travel
+          					</button>
+          					<ul class="dropdown-menu dropdown-menu-dark">
+            					<li>
+									<a class="dropdown-item" href="../index/Domestic.html#oneday">Oneday Trip</a>
+								</li>
+            					<li>
+									<a class="dropdown-item" href="../index/Domestic.html#multiday">Multi-day Trip</a>
+								</li>
+         					</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            					International Travel
+          					</button>
+          					<ul class="dropdown-menu dropdown-menu-dark">
+            					<li>
+									<a class="dropdown-item" href="../index/International.html#europe">Europe</a>
+								</li>
+            					<li>
+									<a class="dropdown-item" href="../index/International.html#asia">Asia</a>
+								</li>
+                                <li>
+									<a class="dropdown-item" href="../index/International.html#america">America</a>
+								</li>
+                                <li>
+									<a class="dropdown-item" href="../index/International.html#africa">Africa</a>
+								</li>
+        					</ul>
+        				</li>						
+          				<li class="nav-item dropdown">
+							<button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            					Help Desk
+          					</button>
+          					<ul class="dropdown-menu dropdown-menu-dark">
+            					<li>
+									<a class="dropdown-item" href="../index/About Us.html#about">About Us</a>
+								</li>
+            					<li>
+									<a class="dropdown-item" href="../index/About Us.html#contact">Contact Us</a>
+								</li>
+            					<li>
+									<a class="dropdown-item" href="../index/About Us.html#refound">Refound Policy</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="../index/About Us.html#privacy">Privacy Policy</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="../index/About Us.html#insurance">Insurance</a>
+								</li>
+          					</ul>
+						</li>						
+     				 </ul>
+    			</div>
+  			</div>
+		</nav>
+		
+
+<!-- Individual area(homepage) -->
+		<div class="container">
+			<section class="sectionsideleft">
+				<div class="sidebutton">
+					<a class="bottombutton" href="#about"> About Us</a>
+					<a class="bottombutton" href="#contact"> Contact Us</a>
+					<a class="bottombutton" href="#refound"> Refound policy</a>
+					<a class="bottombutton" href="#privacy"> Privacy policy</a>
+					<a class="bottombutton" href="#insurance"> Insurance</a>
+				</div>
+			</section>
+
+			<section class="sectioncenter">
+				<div class="companyintro">
+					<div class="selectionHeader">
+						<h2 id="about">Company Introduction</h2>
+					</div>
+					<div>	
+						<blockquote>
+							Hello, this is Travel Explorer.
+							Since our establishment in 1992, Travel Explorer has spent the past 30 years<br/>
+							filling our customers’ precious journeys with happiness through innovative travel packages.<br/><br/>
+							We offer a wide range of domestic and international tour programs,<br/>
+							including both individual and group travel options.<br/>
+							At Travel Explorer, we always put the safety and satisfaction of our customers first.<br/><br/>
+							Thank you.
+						</blockquote>
+					</div>
+					<div>
+						<table class="companytable">
+							<tr>
+								<td class="celltitle"><b>Company Name</b></td>
+								<td class="cellcontent">Travel Explorer</td>
+								<td class="celltitle"><b>CEO</b></td>
+								<td class="cellcontent">Wooseok Bang</td>
+							</tr>
+							<tr>
+								<td class="celltitle"><b>Type of Business</b></td>
+								<td class="cellcontent">General Travel Business</td>
+								<td class="celltitle"><b>Establishment Date</b></td>
+								<td class="cellcontent">9th June 1992</td>
+							</tr>
+							<tr>
+								<td class="celltitle"><b>Address</b></td>
+								<td colspan="3" class="cellcontent">Mayor Street Lower, International Financial Services Centre, Dublin 1</td>
+							</tr>
+							<tr>
+								<td class="celltitle"><b>Contact</b></td>
+								<td class="cellcontent">+353 083 888 8888</td>
+								<td class="celltitle"><b>E-mail</b></td>
+								<td class="cellcontent">bang7573@naver.com</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+				<div class="companyintro">
+					<div class="contactform">
+						<div class="selectionHeader">
+							<h2 id="contact">Contact Us</h2>
+						</div>
+						<form class="row g-3 needs-validation" novalidate> <!-- application form(validation function)-->
+							<div class="col-md-4">
+								<label for="validationCustom01" class="form-label">Title</label>
+								<input type="text" class="form-control" id="validationCustom01" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback"><!-- error message -->
+									Please enter a title.
+								</div>
+							</div>
+							<div class="col-md-3">
+								<label for="validationCustom04" class="form-label">Category of Inquiry</label>
+								<select class="form-select" id="validationCustom04" required>
+									<option selected disabled value="">Choose</option>
+									<option>General</option>
+									<option>Schedule Change</option>
+									<option>Refound</option>
+									<option>Complain</option>
+									<option>Report</option>
+								</select>
+								<div class="invalid-feedback">
+									Please select a category of inquiry
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label for="validationCustom01" class="form-label">First name</label>
+								<input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please enter first name.
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label for="validationCustom02" class="form-label">Last name</label>
+								<input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please enter last name.
+								</div>
+							</div>					
+							<div class="col-md-6">
+								<label for="validationCustom03" class="form-label">E-mail</label>
+								<input type="email" class="form-control" id="validationCustom03" required>
+								<div class="invalid-feedback">
+									Please provide a valid email.
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="validationCustom03" class="form-label">Phone number</label>
+								<input type="text" class="form-control" id="validationCustom03" required>
+								<div class="invalid-feedback">
+									Please enter your phone number
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="validationCustom03" class="form-label">Comment</label>
+								<textarea rows="10" cols="40" class="form-control" id="validationCustom03" required minlength="5"></textarea> <!-- Requiring minimum letter -->
+								<div class="invalid-feedback">
+									Please enter at least 5 letters
+								</div>
+							</div>						
+							<div class="col-12">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+									<label class="form-check-label" for="invalidCheck">
+										Agree to terms and conditions
+									</label>
+									<div class="invalid-feedback">
+										You must agree before submitting.
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<button class="btn btn-primary" type="submit">Submit form</button>
+							</div>
+						</form>
+					</div>		
+				</div>
+
+				<div class="companyintro">
+					<div class="selectionHeader">
+						<h2 id="refound">Refound Policy</h2>
+					</div>
+					<div class="refound">	
+						<blockquote>
+							1. Refund amounts vary depending on the timing of the cancellation:<br/>
+							&nbsp;• Cancellation 30 days or more before the departure date: Full refund of the reservation fee<br/>
+							&nbsp;• Cancellation 29 to 20 days before departure: 70% refund of the total travel cost<br/>
+							&nbsp;• Cancellation 19 to 10 days before departure: 50% refund of the total travel cost<br/>
+							&nbsp;• Cancellation 9 to 1 day before departure: 30% refund of the total travel cost<br/>
+							&nbsp;• Cancellation on the day of departure or no-show without notice: No refund<br/><br/>
+							2. In case of cancellation due to the travel agency's fault, a full refund and additional compensation will be provided as separately announced.<br/><br/>
+							3. Refund requests are processed based on the cancellation request date, and the refund processing period may take up to 14 days.<br/><br/>
+							4. Exceptions to the refund policy may apply in cases of force majeure such as natural disasters, illness, or accidents, upon submission of valid documents.<br/><br/>
+							For further inquiries, please contact our customer service center.
+						</blockquote>
+					</div>
+				</div>
+
+				<div class="companyintro">
+					<div class="selectionHeader">
+						<h2 id="privacy">Privacy Policy</h2>
+					</div>
+					<div class="refound">	
+						<blockquote>
+							Travel Explorer values your privacy and is committed to protecting your personal data in compliance with the General Data Protection Regulation (GDPR) applicable in Ireland and the EU.<br/><br/>
+							<b>Personal Data Collection and Purpose</b><br/>
+							&nbsp;• We collect only the minimum personal information necessary such as name, contact details, email address, and passport number for booking and providing travel services.<br/>
+							&nbsp;• Purpose of collection: processing bookings, customer support, legal compliance, service improvement, and customer communications.<br/><br/>
+							<b>Storage and Retention</b><br/>
+							Personal data is retained only as long as necessary to fulfill the purposes it was collected for and in accordance with legal obligations.<br/>
+							After the retention period, data is securely deleted.<br/><br/>
+							<b>Third-Party Sharing</b><br/>
+							Personal information is shared only with third parties essential for travel service delivery (airlines, hotels, insurance providers) and only with your consent or as required by law.<br/>
+							We do not share personal data for marketing or unrelated purposes.<br/><br/>
+							<b>Your Rights</b><br/>
+							You have rights under GDPR including accessing, correcting, deleting your data, restricting processing, withdrawing consent, and lodging complaints with the Data Protection Commission.<br/>
+							Requests can be made via email or customer service and will be handled promptly.<br/><br/>
+							<b>Children’s Privacy</b><br/>
+							For customers under 16, parental or guardian consent is required for data processing.<br/><br/>
+							<b>Cookies and Tracking</b><br/>
+							Our website uses cookies and similar technologies to enhance your user experience. You may control cookie settings through your browser.<br/><br/>
+							
+							Travel Explorer strives to protect your information and will notify you of any changes to this Privacy Policy in advance<br/>
+							For further inquiries, please send us a message by contact us form.
+						</blockquote>
+					</div>
+				</div>
+
+				<div class="companyintro">
+					<div class="selectionHeader">
+						<h2 id="insurance">Insurance</h2>
+					</div>
+					<div class="refound">	
+						<blockquote>
+							<b>Coverage</b><br/>
+							&nbsp;• This insurance policy covers medical emergencies, trip cancellations, lost or delayed luggage, and travel-related accidents during the insured trip.
+							&nbsp;• Coverage is valid only within the dates and destinations specified in the policy.<br/><br/>
+							<b>Eligibility</b><br/>
+							&nbsp;• The insured must be a resident of Ireland, and the policyholder must provide accurate personal information at the time of application.<br/>
+							&nbsp;• Children under 16 must be accompanied by a parent or guardian.<br/><br/>
+							<b>Exclusions</b><br/>
+							&nbsp;• Pre-existing medical conditions unless declared and accepted in the policy.<br/>
+							&nbsp;• Injuries or losses resulting from extreme sports, illegal activities, or substance abuse.<br/>
+							&nbsp;• Losses due to war, terrorism, or natural disasters unless specifically covered.<br/><br/>
+							<b>Claims</b><br/>
+							&nbsp;• Claims must be submitted within 30 days of the incident with complete documentation including medical reports, receipts, and police reports if applicable.<br/>
+							&nbsp;• Fraudulent claims will result in policy termination and possible legal action.<br/><br/>
+							<b>Cancellation and Refunds</b><br/>
+							&nbsp;• Insurance premiums are generally non-refundable once coverage starts, except in cases of policy denial or duplicate purchase.<br/><br/>
+							<b>Data Protection</b><br/>
+							&nbsp;• Personal data collected for insurance purposes will be processed in compliance with Ireland’s GDPR regulations and used solely for underwriting, claims processing, and customer service.<br/><br/>
+							<b>Contact</b><br/>
+							&nbsp;• For questions or to file a claim, customers should contact Travel Explorer’s insurance liaison or the insurance provider directly.
+						</blockquote>
+					</div>
+				</div>
+			</section>	
+
+			<section class="sectionsideright"> </section>	
+		</div>			
+		
+		
+		<!-- Common area(bottom) -->
+		<footer id="footer">
+			<div id="bottombanner">
+				<div class="bottomuper">
+					<div class="bottom1">
+						<a href="index.html">
+							<img id="logo" src="../image/bird.png" alt="logo">
+						</a>
+					</div>				
+					<div class="bottom2">
+							<p>
+								<b>Help Desk</b><br/>
+								•Tellephone number: +353 083 888 8888<br/>
+								•Opening hours<br/>
+								&nbsp;-Monday to Friday: 09:00 - 18:00<br/>
+								&nbsp;-Weekend & Bankholiday: 12:00 - 18:00 <!--Blank-->
+							</p>
+					</div>
+				</div>
+				<div class="bottomlower">
+					<div class="bottom3">
+						<a class="bottombutton" href="About Us.html"> Privacy policy</a>
+						<a class="bottombutton" href="About Us.html"> Refound policy</a>
+						<a class="bottombutton" href="About Us.html"> Insurance</a>												
+					</div>
+					<div class="bottom4">
+						<a class="bottombutton" href="About Us.html"> About Us</a>
+						<a class="bottombutton" href="About Us.html"> Contact Us</a>
+					</div>
+				</div>
+			</div>	
+			<div id="copyright"> <!-- copyright logo and comment-->
+				Copyright &copy; 2025 Travel Explorer
+			</div>
+		</footer>
+
+		<script> /* JAVA script of validation function */
+			(() => {
+			'use strict'
+			const forms = document.querySelectorAll('.needs-validation')
+			Array.from(forms).forEach(form => {
+				form.addEventListener('submit', event => {
+				if (!form.checkValidity()) {
+					event.preventDefault()
+					event.stopPropagation()
+				}
+				form.classList.add('was-validated')
+				}, false)
+			})
+			})()
+		</script>
+	</body>
+		
+	
+		
+	
+	
+</html>
